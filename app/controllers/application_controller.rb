@@ -14,8 +14,8 @@ class ApplicationController < Sinatra::Base
   get '/' do
     #session.clear
     if logged_in
-      "hello world"
-      erb :"/index", :layout => :"layout/internal"
+
+      erb :"/dice/dice_index", :layout => :"layout/internal"
     else
       erb :"/homepage", :layout => :"layout/external"
     end

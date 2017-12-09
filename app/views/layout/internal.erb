@@ -56,51 +56,11 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid wrapper">
+    <!-- ADD NAV BAR FOR LOGOUT and addtional pages -->
 
-      <!-- *** Header *** -->
-      <header>
-        <div class="row header">
-          <div class="col-sm-12">
-            <h1>SightSeeDC</h1>
-            <br></br>
-            <h4>See the City You Want to See</h4>
-          </div> <!-- col-sm-12 -->
-        </div> <!-- row -->
-      </header>
+        <p><%= %>Logout</p>
+    
 
-      <!-- *** NAVBAR *** -->
-      <div class="row">
-        <div class="col-sm-12">
-          <nav class="navbar navbar-default">
-            <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li><a href="/">HOME</a></li> <!-- Link 1 left -->
-                  <li><a href="/users/<%= current_user.slug %>">MY LIST</a></li> <!-- Link 2 left-->
-                  <li><a href="/sights">SIGHTS</a></li> <!-- Link 3 left -->
-                  <li><a href="/reviews">REVIEWS</a></li> <!-- Link 4 left -->
-                </ul> <!-- ul for lefthand links -->
-
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/about">ABOUT</a></li> <!-- Link 1 right -->
-                  <li><a href="/logout">LOG OUT</a></li> <!-- Link 2 right -->
-                </ul> <!-- ul for righthand links -->
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-        </div> <!-- col-sm-12 -->
-      </div> <!-- row -->
 
       <%= yield %>
 

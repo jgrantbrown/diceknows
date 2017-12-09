@@ -1,5 +1,9 @@
 class User < ActiveRecord::Base
-  
+
+  validates_presence_of :username, uniqueness: true
+  validates_presence_of :password
+  validates_presence_of :email, uniqueness: true
+
   has_secure_password
 
   def slug

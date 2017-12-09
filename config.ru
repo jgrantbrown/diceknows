@@ -7,5 +7,8 @@ end
 use Rack::MethodOverride #for later use of patch/delete routes
 
 use UserController
+use SayingController
+# use DiceController
+# use ImageController
 
 run ApplicationController #mounting main controller
