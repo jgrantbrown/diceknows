@@ -1,0 +1,22 @@
+
+
+build models
+User
+  username
+  password
+  email
+  first_name
+  last_name
+
+dice
+  has_many images
+  has_many sayings
+
+image
+  belongs_to dice
+  image_name
+
+sayings
+  ( authenticate as one word)
+  belongs_to dice
+  text saying

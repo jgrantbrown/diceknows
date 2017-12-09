@@ -5,4 +5,7 @@ if ActiveRecord::Migrator.needs_migration? #reminder to run migrations
 end
 
 use Rack::MethodOverride #for later use of patch/delete routes
+
+use UserController
+
 run ApplicationController #mounting main controller
