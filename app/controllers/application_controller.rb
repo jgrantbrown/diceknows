@@ -15,6 +15,8 @@ class ApplicationController < Sinatra::Base
     #session.clear
     if logged_in
 
+      @random_word = Saying.find(Saying.all.ids.sample)
+
       erb :"/dice/dice_index", :layout => :"layout/internal"
     else
       erb :"/homepage", :layout => :"layout/external"

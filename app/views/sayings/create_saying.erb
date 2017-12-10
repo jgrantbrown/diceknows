@@ -1,10 +1,16 @@
 
 
-<div style= "margin-left:33.33%;">
+<div style= "margin:33.33%;
+            background: grey;
+            text-align: center;">
   <h1>Add something Dice knows </h1>
-  <p> You can only add a single word <p>
+
     <form method="POST" action='/saying'>
-      <input type='text' name='add_word'>
+      <input type='text' name='word[add_word]'>
       <input type='submit' value="Add Word">
+    </form>
+
+    <form method="GET" action="/">
+      <input type="submit" value="See what else Dice Knows?"></input>
     </form>
 </div>

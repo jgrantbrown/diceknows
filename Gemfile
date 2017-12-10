@@ -1,4 +1,12 @@
 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor'
+end
+
+group :devlopment, :test do
+  gem 'sqlite3'
+end
 
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }

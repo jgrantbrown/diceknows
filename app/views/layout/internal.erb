@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SightSeeDC - Index</title>
+    <title>Dice Knows</title>
 
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,14 @@
       html {position: relative;
             min-height: 100%;
             }
-      body {font-family: 'Arvo', serif;
-            margin-bottom: 70px;
+      body {
+              background-image: url("/images/image1.jpeg");
+              background-size: cover;
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              font-family: 'Arvo', serif;
+              margin-bottom: 70px;
             }
       header {background-image:url('/img/panorama.jpg');
               background-size: cover;
@@ -58,8 +64,8 @@
   <body>
     <!-- ADD NAV BAR FOR LOGOUT and addtional pages -->
 
-        <p><%= %>Logout</p>
-    
+        <a href='/logout'>Logout </a>
+
 
 
       <%= yield %>

@@ -1,7 +1,17 @@
-<div>
+<div class="main_quote"
+    style="
+    margin:33.3%;
+    background: grey;
+    text-align: center;">
 
-  <h1> Dice Knows  saying.random  ! </h1>
-  <button><a href='saying/create_saying'>Add something Dice Knows: </a></button>
+  <h1> Dice Knows  "<%= @random_word[:word] %>" ! </h1>
 
+  <form method="GET" action="saying/create_saying">
+    <input type="submit" value="Add Something Dice Knows?"></input>
+  </form>
+
+  <form method="GET" action="/">
+    <input type="submit" value="See what else Dice Knows?"></input>
+  </form>
 
 </div>
