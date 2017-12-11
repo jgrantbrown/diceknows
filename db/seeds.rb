@@ -8,8 +8,8 @@ saying_list={
 }
 
 
-saying_list.each do |word, band_hash|
+saying_list.each do |word, word_hash|
   b = Saying.new
-  b.word = word
+  b[:word] = word
   b.save
 end
