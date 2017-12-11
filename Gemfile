@@ -1,3 +1,5 @@
+source 'https://rubygems.org'
+ruby "2.0.0"
 
 group :production, :staging do
   gem 'pg'
@@ -11,7 +13,6 @@ end
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 
-source 'http://rubygems.org'
 
 gem 'sinatra'
 gem 'activerecord', :require => 'active_record'
@@ -23,4 +24,3 @@ gem 'shotgun'
 gem 'pry'
 gem 'bcrypt'
 gem "tux"
-gem 'sqlite3'
